@@ -12,13 +12,15 @@ public partial class _Default : System.Web.UI.Page
 
     }
 
+
+
     protected void Button1_Click(object sender, EventArgs e)
     {
-        if(TextBox1.Text=="abc" && TextBox2.Text=="xys")
+        if (TextBox1.Text == "Reshu" && TextBox2.Text == "chauhan")
         {
             HttpCookie ck = new HttpCookie("myckk");
-            ck.Values.Add("uname",TextBox1.Text);
-            ck.Values.Add("upass",TextBox2.Text);
+            ck.Values.Add("uname", TextBox1.Text);
+            ck.Values.Add("upass", TextBox2.Text);
             ck.Expires = DateTime.Now.AddHours(1);
             Response.Cookies.Add(ck);
             Response.Redirect("default2.aspx");

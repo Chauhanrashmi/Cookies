@@ -12,7 +12,7 @@ public partial class Default2 : System.Web.UI.Page
         HttpCookie ckk = Request.Cookies["myckk"];
         if(ckk!=null)
         {
-            Label1.Text = "Welcome:" + ckk.Values["un"];
+            Label1.Text = "Welcome:" + ckk.Values["uname"];
         }
         else
         {

@@ -25,6 +25,8 @@
         </strong>
         <asp:Button ID="Button1" runat="server" Height="32px" OnClick="Button1_Click" Text="Login" Width="347px" />
     
+        <br />
+    
     </div>
     </form>
 </body>
